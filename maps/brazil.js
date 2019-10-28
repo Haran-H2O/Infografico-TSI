@@ -3,7 +3,6 @@ window.JSMaps.maps.brazil = {
 		"mapWidth": 612.5,
 		"mapHeight": 639.03,
 		"responsive": true,
-		
 	},
 	"paths": [
 		{
@@ -358,8 +357,7 @@ window.JSMaps.maps.brazil = {
 			"color": "#86F8FF",
 			"hoverColor": "#E32F02",
 			"selectedColor": "#feb41c",
-			"url": "http://jsmaps.io",
-			"text": "<div class='pin'><h1>Região Centro-Oeste</h1><br /><p>O clima em toda essa imensa área da região Centro-Oeste tem mudado bastante nesses últimos anos. Dentre essas alterações observáveis, o que chama a atenção dos moradores é o aumento significativo das temperaturas médias, com o prolongamento acentuado dos períodos de seca e consequente redução das estações chuvosas, que passaram a ficar mais condensadas e muito mais violentas e imprevisíveis. Por anos, os mais renomados ambientalistas vêm alertando para essa catástrofe. O que hoje é visto com orgulho como o grande celeiro do Brasil e do mundo, pode, em breve, virar uma planície coberta de areias escaldantes, semelhantes às que existem no Norte do Continente Africano.</p><p>Reportagens mostram que apenas entre 2016 e 2017 o cerrado perdeu 14.185 Km² de vegetação nativa devido ao desmatamento incontrolável, assim como ocorre na região Norte.</p> <p>Calcula-se que tenha desaparecido também metade, ou mais, da fauna que habitava essas regiões. Com essa devastação sem precedentes, muitos rios e riachos simplesmente secaram, se transformando em caminhos naturais de areia e pedras.</p><h3>Bibliografia</h3><p>http://blogs.correiobraziliense.com.br/aricunha/desmatamento-compromete-futuro-do-centro-oeste/</p></div>"
+			"url": "http://jsmaps.io"
 		},
 		{
 			"name": "SUDESTE",
@@ -368,8 +366,7 @@ window.JSMaps.maps.brazil = {
 			"color": "#86F8FF",
 			"hoverColor": "#E32F02",
 			"selectedColor": "#feb41c",
-			"url": "http://jsmaps.io",
-			"text": "<div class='pin'><h1>Região Sudeste</h1><br /><p>A região sudeste é densamente povoada, abriga as sete maiores metrópoles brasileiras, são elas: São Paulo com uma população estimada de 17,8 milhões, Rio de Janeiro com 10,8 milhões, Belo Horizonte 4,8 milhões, Campinas 2,3 milhões, Vitória e Baixada Santista ambas com 1,4 milhões e em Minas, o Vale do Aço com 560 mil.</p><p>A imensa concentração de pessoas provocam poluição no solo, água e ar. A poluição do solo ocorre principalmente nos lixões, que além de poluir o solo atinge também o lençol freático, a água é poluída através de esgotos sem tratamento, resíduos de produtos químicos descartados pela indústria e o ar que sofre alterações provenientes da emissão de gases de veículos com combustíveis fósseis (carros, ônibus e caminhões) e emitidos também por atividades industriais.</p><p>Os principais agentes das enchentes são a impermeabilização do solo, por causa das construções (asfaltos, calçadas, edificações) e a falta de áreas verdes que permitem a absorção da água da chuva pelo solo. No caso dos deslizamentos as causas estão ligadas à falta de vegetação e a ocupação urbana em locais com relevos impróprios, como não existe cobertura vegetal para reter a água, o solo absorve até um nível de saturação é nesse momento que ocorre o deslizamento, pois a terra não consegue suportar e se rompe.</p><h3>Bibliografia</h3><p>https://brasilescola.uol.com.br/brasil/regiao-sudeste-paisagens-intensamente-transformadas</p></div>"
+			"url": "http://jsmaps.io"
 		},
 		{
 			"name": "SUL",
@@ -378,8 +375,7 @@ window.JSMaps.maps.brazil = {
 			"color": "#86F8FF",
 			"hoverColor": "#E32F02",
 			"selectedColor": "#feb41c",
-			"url": "http://jsmaps.io",
-			"text": "<div class='pin'><h1>Região Sul</h1><br /><p>Na região sul do Brasil, mais precisamente no estado do Rio Grande do Sul em sua porção sudoeste, existe um problema ambiental que vem se agravando ao longo do tempo: a arenização. Trata-se da formação de bancos de areia em solos predispostos para essa ocorrência, o que ocasiona o esgotamento das áreas agricultáveis e a consequente perda da vegetação e de nutrientes.</p><p>A arenização na região Sul ocorre pela soma de alguns fatores: a predisposição dos solos, que são naturalmente arenosos; o uso intensivo deles na agricultura; a remoção da vegetação e a retirada de nutrientes. Com o desmatamento das áreas para a agricultura, os solos ficam mais expostos à ação das chuvas, que auxiliam na sedimentação e movimentação dos sedimentos, que, por sua vez, dão origem aos areais que recobrem os solos e tornam a paisagem, em muitos casos, semelhante a áreas de deserto.</p><p>Outro problema ambiental dessa região é causado pela uso de agrotóxicos, podendo contaminar o solo e a água. Um estudo feito a pedido do Ministério Público de Santa Catarina (MPSC) em 2018 encontrou resíduos de agrotóxicos em amostras de água do abastecimento público de 22 municípios do estado. Foram achadas até substâncias banidas na União Europeia. No total, foram achadas nas amostras sete substâncias banidas na União Europeia (UE). Em 13 dos 22 municípios, foram encontrados resíduos de mais de um agrotóxico.<h3>Bibliografia</h3><p>https://brasilescola.uol.com.br/brasil/desertificacao-no-sul</p><p>https://g1.globo.com/sc/santa-catarina/noticia/2019/03/22/estudo-encontra-residuos-de-agrotoxicos-na-agua-de-22-municipios-de-sc.ghtml</p></div>"
+			"url": "http://jsmaps.io"
 		},
 	]
 }
