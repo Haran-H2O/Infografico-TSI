@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JSMaps - Responsive Javascript Maps</title>
+  <meta name="description" content="JSMaps - Responsive Javascript Maps - http://jsmaps.io">
+  <meta name="author" content="LGLab">
+
+  <!-- Demo scripts -->
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style type="text/css">
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: 'Droid Sans', sans-serif;
+      background:#f2f2f2;
+      font-size:14px;
+      line-height:21px;
+    }
+
+    .container {
+      width: 960px;
+      margin:20px auto;
+      margin-left: 30%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .container {
+        width: 768px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .container {
+        width: 420px;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      .container {
+        width: 300px;
+      }
+    }
+
+    a img {
+      border:none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6{ 
+      font-weight:normal; 
+    }
+    h1{ 
+      font-size:26px; 
+      line-height:32px; 
+    }
+    p, ul{
+      margin-bottom:10px;
+    }
+   
+
+      
+
+  </style>
+  <!-- End Demo scripts -->
+
+  <!-- Jquery is required, embed on your page if not already - don't embed 2 versions -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <!-- End Jquery -->
+
+  <!-- Map scripts - add the below to your page -->
+  <!-- jsmaps-panzoom.js is optional if you are using enablePanZoom -->
+  <link href="jsmaps/jsmaps.css" rel="stylesheet" type="text/css" />
+  <script src="jsmaps/jsmaps-libs.js" type="text/javascript"></script>
+  <script src="jsmaps/jsmaps-panzoom.js"></script>
+  <script src="jsmaps/jsmaps.js" type="text/javascript"></script>
+  <script src="maps/brazil.js" type="text/javascript"></script>
+  <!-- End Map scripts -->
+
+  <!-- bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="nav">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+          Principais Problemas ambientais por regiões no Brasil
+        </span>
+      </nav>
+    </div>
+
+  <div class="container">
+
+    <!-- Map html - add the below to your page -->
+    <div class="jsmaps-wrapper" id="brazil-map"></div>
+    <!-- End Map html -->
+    <button id="btnInfo" type="button" class="btn btn-primary col-9 mt-3" data-toggle="modal" data-target="#ExemploModalCentralizado">
+        Informação do Brasil
+    </button>
+  </div>
+
+  
+
+  <!-- Modal -->
+
+  <div class="modal fade text-justify" id="Info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Brasil</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <br>
+            <p>O Brasil, um vasto país sul-americano, se estende da Bacia Amazônica, no norte, 
+              até vinhedos e enormes Cataratas do Iguaçu, no sul. Rio de Janeiro, simbolizado por sua estátua de Cristo Redentor de 38m no topo do Monte. 
+              Corcovado, é famosa por suas movimentadas praias de Copacabana e Ipanema, além de seu enorme e estridente festival de Carnaval, com carros alegóricos, 
+              trajes extravagantes e samba. Delimitado pelo Oceano Atlântico, a leste, o Brasil tem um litoral de 7.491 km (4.655 milhas). 
+              Faz fronteira com todos os outros países da América do Sul, exceto Equador e Chile, e ocupa 47,3% do continente da América do Sul. 
+              Sua bacia do rio Amazonas inclui uma vasta floresta tropical, lar de fauna diversificada, 
+              uma variedade de sistemas ecológicos e extensos recursos naturais que abrangem vários habitats protegidos. 
+              Esse patrimônio ambiental único faz do Brasil um dos 17 países megadiversos e é objeto de significativo interesse e debate global sobre desmatamento e proteção ambiental.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="modal fade text-justify" id="NORTE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Região Norte</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <br> 
+            <p>A região Norte vem sofrendo nos últimos anos tanto com os desmatamentos quanto com as queimadas. 
+            O Instituto Nacional de Pesquisas Espaciais (Inpe) do Brasil registrou um recorde de 72.843 incêndios este ano, 
+            um aumento de 80% em relação ao ano passado de 2018. O tamanho das queimadas ainda não é preciso, 
+            mas elas se espalham pelos estados que compreendem a floresta na região Norte e Centro-Oeste do Brasil. Em 11 de agosto, 
+            a Nasa mostrou que os incêndios eram tão grandes que podiam ser vistos do espaço. “Isto é, sem dúvida alguma, 
+            uma das duas únicas ocasiões em que houve incêndios como estes”, afirma Thomas Lovejoy, ecologista e National Geographic Explorer-at-Large, sobre a Amazônia. 
+            Não há dúvida de que é uma consequência do recente aumento do desmatamento, diz ele. Em julho, o maior volume de desmatamento na região Norte se concentra no Pará (892,45 km²), 
+            seguido pelo Amazonas (423,88 km²) e Rondônia (384,18 km²). Tais problemas, infelizmente vem sendo comum nos últimos anos na região Norte.</p>
+            <br> 
+            <h4>Bibliografia</h4> 
+            <a href="https://www.nationalgeographicbrasil.com/meio-ambiente/2019/08/tragedia-amazonia-pegando-fogo-bolsonaro-recordes-desmatamento-fumaca-impacto">National Geographic Brasil</a>
+            <br>
+            <a href="https://www.nationalgeographicbrasil.com/meio-ambiente/2019/06/governo-bolsonaro-desmatamento-amazonia-dispara">National Geographic Brasil</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade text-justify" id="NORDESTE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Região Nordeste</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <br>
+          <p>A desertificação do solo é dos problemas ambientais mais graves que afetam a região nordeste do Brasil, 
+            assim como de aproximadamente 15% das terras cultiváveis do globo terrestre.   
+            O processo de desertificação do Nordeste é encarado pelas autoridades e especialistas como um problema que precisa de uma solução imediata, 
+            uma vez que a desertificação do solo afeta a produtividade do setor agropecuário e a qualidade de vida das populações locais. 
+            Há no Brasil um plano de combate à desertificação, o Plano Nacional de Combate à Desertificação (PNCD) 
+            atua em conjunto com diversas instituições de ensino e pesquisa na busca da melhor forma de controlar o avanço da desertificação no Brasil.</p>
+          <br>
+          <p>Estudos realizados pelo PNCD e por outras entidades mostram que as principais causas da desertificação no Nordeste são o 
+            desmatamento desenfreado para utilização das terras na agropecuária, além da mineração excessiva e a salinização provocada pela 
+            utilização de técnicas equivocadas de irrigação do solo nas regiões subúmidas e semiáridas do Nordeste brasileiro.</p>
+          <br> 
+          <h4>Bibliografia</h4>
+          <a href="https://www.pensamentoverde.com.br/meio-ambiente/desertificacao-no-nordeste-causas-principais-problemas-e-como-controla-lo/">Pensamento Verde</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    $(function() {
+      
+      $('#brazil-map').JSMaps({
+        map: 'brazil'
+
+        /*onStateClick: function(data) {
+          $('#'+data).modal("show");
+        }*/
+      });
+
+      $('#btnInfo').click(function(){
+        $('#Info').modal("show");
+      });
+      
+    });
+    
+  </script>
+  
+  
+  
+</body>
+
+</html>
